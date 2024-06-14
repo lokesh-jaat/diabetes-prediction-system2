@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction</title>
+    <style>
+        body {
+            background-image: url(" {% static 'diabetes prediction\images\abcd.jpg' %}");
+        background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .main{
+            position: fixed;
+            top: 140px;
+            left: 410px;
+            width: 550px;
+            background-color:#ffffff;
+            border-radius: 10px;
+            align-items: center;
+            padding: 5%;
+        }
+        h1{
+            color: #0086b3;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        input[type=submit]{
+            background-color: #4dc3ff;
+            border: 2px;
+            color: white;
+            padding: 8px 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+<p> WELCOME TO PREDICTION</p>
+<h1>PLEASE ENTER THE FOLLOWING INFORMATION</h1>
+<form action="result">
+<table>
+  <tr>
+      <th> PREGNANCIES:</th>
+     <th> <input type="text" name="n1"</th>
+  </tr>
+<tr>
+      <th> GLUCOSE:</th>
+     <th> <input type="text" name="n2"</th>
+  </tr>
+<tr>
+      <th> BLOOD PRESSURE:</th>
+     <th> <input type="text" name="n3"</th>
+  </tr>
+    <tr>
+      <th> SKIN THICKNESS:</th>
+     <th> <input type="text" name="n4"</th>
+  </tr>
+   <tr>
+      <th> INSULIN:</th>
+     <th> <input type="text" name="n5"</th>
+  </tr>
+    <tr>
+      <th> BMI:</th>
+     <th> <input type="text" name="n6"</th>
+  </tr>
+    <tr>
+      <th> DIABETES PEDIGREE FUNCTION:</th>
+     <th> <input type="text" name="n7"</th>
+  </tr>
+    <tr>
+      <th> AGE:</th>
+     <th> <input type="text" name="n8"</th>
+  </tr>
+</table>
+    <input type="SUBMIT">
+</form>
+Result:{{result2}}
+
+
+
+
+</body>
+</html>
